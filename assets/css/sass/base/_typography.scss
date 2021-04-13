@@ -1,0 +1,176 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--second-font);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #3d4449;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+h1 {
+    font-size: 1.4em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.9em;
+}
+
+h6 {
+    font-size: 0.8em;
+}
+
+hr.short-hr {
+    width: 3em;
+    margin-left: 1px;
+    margin-top: .6rem;
+    border-top: 3px solid rgba(0, 0, 0, .1);
+}
+
+
+.image img {
+    border-radius: 0.375em;
+    display: block;
+    margin: 0 auto;
+    height: 168px;
+    object-fit: scale-down;
+}
+
+p a:focus,
+p a:hover {
+    text-decoration: underline;
+}
+
+p a:link {
+    text-decoration: none;
+    color: tomato;
+}
+
+p a:visited {
+    color: lightseagreen;
+}
+
+ul,
+ol {
+    padding-left: 20px;
+}
+
+.no-list-style {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.shadow {
+    -webkit-box-shadow: 2px 2px 20px -7px rgba(0, 0, 0, .6);
+    -moz-box-shadow: 2px 2px 20px -7px rgba(0, 0, 0, .6);
+    box-shadow: 2px 2px 20px -7px rgba(0, 0, 0, .6);
+}
+
+.pad-20 {
+    padding: 20px;
+}
+
+.padding-left-20 {
+    padding-left: 20px;
+}
+
+.logo-wallpaper {
+    background: url('assets/img/logo-wallpaper-1920x1080-v1.1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+code {
+    background-color: #dedede;
+    padding: 4px 6px;
+    border-radius: 3px;
+    color: inherit;
+}
+
+textarea,
+input {
+    border: none;
+    border-bottom: solid 1px #e0e0e0;
+}
+
+input[type=text]:hover,
+input[type=search]:hover {
+    border-bottom: 1px solid #0091ea;
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: #ddd;
+    color: #666;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: #0091ea;
+    color: #fff;
+}
+
+label {
+    width: 100px;
+}

@@ -1,0 +1,20 @@
+section {
+    background: #fff;
+    border-radius: 30px;
+    border: 1px solid #4a89dc;
+    margin: 20px auto;
+}
+
+main {
+    margin: 70px 0 35px 0;
+    transition: transform 0.5s;
+    z-index: 1;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    section {
+        max-width: 70vw;
+    }
+}
