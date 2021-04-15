@@ -1,0 +1,221 @@
+.music-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    min-height: auto;
+    svg{
+        height: 1em;
+        width: 1em;
+    }
+    .player {
+        position: relative;
+        width: 100%;
+        padding-top: 1px;
+        border-radius: 30px;
+        z-index: 2
+    }
+    .trackDetails {
+        text-align: center;
+        margin: 4px auto;
+        width: 300px;
+        border: 1px solid #777;
+        background: #fff;
+        border-radius: 4px;
+        padding: 6px
+    }
+
+
+    .icons,
+    .splitTxt {
+        color: #000
+    }
+    
+    .artist,
+    .mp3-title {
+        color: #999;
+        user-select: none;
+        left: 167px
+    }
+    
+    .mp3-title {
+        font-size: 14px;
+        font-weight: 700
+    }
+    
+    .artist {
+        font-size: 12px
+    }
+    
+    .controls {
+        cursor: pointer;
+        height: 40px;
+        width: 120px;
+        margin: 0 auto;
+        .fwd,
+        .pause,
+        .play,
+        .rew {
+            float: left;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            text-align: center
+        }
+    }
+    
+    
+    
+    .controls .pause,
+    .controls .play,
+    .plIcon,
+    .volumeIcon {
+        font-size: 26px
+    }
+    
+    .playlistIcon,
+    .volumeIcon {
+        position: absolute;
+        bottom: 10px;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+    
+        color: #333;
+        background: #fff;
+        padding: 9px;
+        border-radius: 100%;
+        line-height: 1;
+    }
+    
+    .playlistIcon {
+        right: 10px;
+        font-size: 1.5em;
+    }
+    
+    .icon-plylst {
+        font-size: 1.5em;
+        z-index: 1001
+    }
+    
+    .volumeIcon {
+        left: 10px;
+    }
+    
+    .controls .pause {
+        display: none
+    }
+    
+    .controls .visible {
+        display: inline-block
+    }
+    
+    .tracker {
+        cursor: pointer;
+        height: 5px;
+        .ui-slider-range {
+            background: #00dbde;
+            background: linear-gradient(to right, #00dbde 0, #fc00ff 100%);
+            transition: all ease-in-out .3s;
+            height: 100%;
+            top: 0
+        }
+    }
+    
+    .ui-widget.ui-widget-content {
+        border: 0
+    }
+    
+    .ui-corner-all {
+        border-radius: 0
+    }
+    
+    .ui-slider .ui-slider-handle {
+        position: absolute;
+        bottom: -4px;
+        top: unset;
+        outline: none;
+        background: rgba(0,0,0,0.5);
+
+        display: block;
+        height: 14px;
+        border-radius: 14px;
+        width: 14px;
+        transition: all ease-in-out .3s
+    }
+    
+    .volume .ui-slider-range {
+        background: #444;
+        transition: all ease-in-out .3s
+    }
+    
+    .volume.ui-widget-content {
+        background: var(--main-color);
+    }
+    
+    .ui-slider-handle {
+        cursor: pointer;
+        height: 10px;
+        margin-left: -5px;
+        top: 2px;
+        width: 10px;
+        z-index: 2
+    }
+    
+    .volume {
+        display: none;
+        right: 14px;
+        position: absolute;
+        top: 40px;
+        height: 100px;
+        width: 15px;
+        box-shadow: 0 0 10px #222;
+        z-index: 900;
+        .ui-slider-handle {
+            display: none;
+        }
+    }
+    
+    .playlist {
+        display: none;
+        background-color: #eee;
+        list-style-type: none;
+        padding-bottom: 10px;
+        padding: 15px;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        transition: all ease-in-out .1s;
+        li {
+            color: #333;
+            margin-bottom: 4px;
+            padding: 6px 12px;
+            transition: all ease-in-out .1s;
+            cursor: pointer;
+            &:hover {
+                background: #333;
+                color: #eee
+            }
+            &.active {
+                font-weight: 700;
+                background: #000;
+                color: #eee
+            }
+        }
+    }
+    
+    .ui-button,
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-button.ui-state-disabled:active,
+    .ui-button.ui-state-disabled:hover {
+        border: 0
+    }
+    
+    .ui-widget-content {
+        background: #ddd
+    }
+
+}

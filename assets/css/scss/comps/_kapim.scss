@@ -1,0 +1,31 @@
+.kapi-disi {
+    background: url(../../images/door-Border.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 44%;
+    left: 22%;
+    height: 247px;
+    width: 147px;
+    -webkit-perspective: 450;
+    perspective: 450;
+
+    .kapi-ici {
+        background: url(../../images/Class-Door.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 147px;
+        height: 247px;
+        position: absolute;
+        box-shadow: 0 0 0 10px rgba(var(--section), 0.2) inset;
+        transition: 1s transform linear;
+        transform-origin: left;
+        cursor: pointer;
+
+        &.active {
+            transform: rotateY(-90deg);
+            transform-origin: 8px;
+            transition: .5s linear;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.hide{
+    display: none
+}
+  
+/* 
+author: @hkkcngz
+Lets Make Our Show/Hide Checkbox Class 
+* how to use it
+* <label for="tagetid"></label>
+* 
+* <input type="checkbox" class="hide toggleCheckbox" id="tagetid">
+* <div class="toggleShowHide">
+*/
+  
+.toggleCheckbox:checked + .toggleShowHide{
+    display: none;
+}
+// Lets Make Our Show/Hide Checkbox Class 
+
+/* Lets Make Our Show/Hide Radio Buttons Class for Tabs
+* how to use it
+* <label for="tagetid"></label>
+* 
+* <input type="radio" name="tab" class="hide toggleRadio" id="tagetid">
+* <div class="toggleShowHideTab">
+*/
+.toggleRadio:checked + .toggleShowHideTab{
+    display: flex; // this is flex on my items. you can use block.
+}
+.toggleRadio + .toggleShowHideTab{
+    display: none;
+}
+// Lets Make Our Show/Hide Radio Buttons Class

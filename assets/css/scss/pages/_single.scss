@@ -1,0 +1,148 @@
+.normal{
+    font-size: 100%;
+}
+.up{
+    font-size: 150%;
+}
+.down{
+    font-size: 50%;
+}
+
+/* The browser window */
+iframe.mobile-iframe {
+    width: 100%;
+    min-height: 600px;
+}
+.iframe-container {
+  border: 3px solid #f1f1f1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* Container for columns and the top "toolbar" */
+.iframe-row {
+  padding: 10px;
+  background: #f1f1f1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.iframe-row .kolon {
+  float: left;
+}
+
+.sol {
+  width: 15%;
+}
+
+.sag {
+  width: 10%;
+}
+
+.orta {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.iframe-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Three dots */
+.dot {
+  margin-top: 4px;
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Style the input field */
+.iframe-row input[type=text] {
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  background-color: white;
+  margin-top: -8px;
+  height: 25px;
+  color: #666;
+  padding: 5px;
+}
+
+/* Three bars (hamburger menu) */
+.bar {
+  width: 17px;
+  height: 3px;
+  background-color: #aaa;
+  margin: 3px 0;
+  display: block;
+}
+
+/* Page content */
+.icerik {
+  padding: 10px;
+}
+
+/* presentation styles*/
+.outline-box {
+	margin: 40px auto;
+	width: 180px;
+	height: 180px;
+}
+
+.outline-auto {
+	background-color: aliceblue;
+	outline: 50px auto lavender;
+}
+
+.outline-double {
+	background-color: thistle;
+	outline: 14px double white;
+	outline-offset: -20px;
+}
+
+.outline-dotted-1 {
+	background-color: mistyrose;
+	outline: 24px dotted white;
+	outline-offset: -12px;
+}
+
+.outline-dotted-2 {
+	background-color: lightgoldenrodyellow;
+	outline: 40px dotted white;
+	outline-offset: -18px;
+}
+
+.outline-groove {
+	background-color: antiquewhite;
+	outline: 14px groove burlywood;
+	outline-offset: -15px;
+}
+
+.outline-dashed {
+	background-color: rosybrown;
+	outline: 22px dashed white;
+	outline-offset: -12px;
+}
+
+.outline-ridge {
+	background-color: azure;
+	outline: 14px ridge lightblue;
+	outline-offset: -14px;
+}
+
+.outline-outset {
+	background-color: floralwhite;
+	outline: 24px outset pink;
+	outline-offset: -24px;
+}
+
+.outline-inset {
+	background-color: bisque;
+	outline: 24px inset sandybrown;
+	outline-offset: -24px;
+}

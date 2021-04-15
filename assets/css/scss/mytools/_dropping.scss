@@ -1,0 +1,85 @@
+/* 
+Dropping is actually pure css dropdown menu.
+Author: @hkkcngz
+Usage:
+  <div class="dropping righten">
+     <label class="dropping-opener" for="dropping00"><i class="fas fa-user"></i></label>
+
+      <input type="checkbox" id="dropping00" name="dropping" class="dropping-input"  checked />
+      <div class="dropping-menu">
+        <ul>
+          <li>
+              <span>Login</span>
+          </li>
+          <li>
+              <span>Register</span>
+          </li>
+        </ul>
+      </div>
+  </div>
+*/
+.dropping {
+    --bgcolor: #002550;
+    --bghover: #073e7d;
+    --color: white;
+    --fontsize: 25px;
+    --fontsizemenu: 1rem;
+    position: relative;
+    display: inline-block;
+    font-size: var(--fontsize);
+    user-select: none;
+    .dropping-opener {
+      cursor: pointer;
+    }
+    .dropping-menu {
+      position: absolute;
+      left: 50%;
+      right: unset;
+      display: none;
+      transform: translateX(-50%);
+      font-size: var(--fontsizemenu);
+      margin-top: 13px;
+      z-index: 10;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          background: var(--bgcolor);
+          & > * {
+            display: block;
+            color: var(--color);
+            padding: 10px 20px;
+            text-decoration: none;
+            cursor: pointer;
+          }
+          &:hover {
+            background: var(--bghover);
+          }
+        }
+      }
+    }
+    input.dropping-input {
+      display: none;
+    }
+    .dropping-input:checked + .dropping-menu {
+      display: block;
+    }
+    &.righten {
+      float: right;
+      .dropping-menu {
+        right: 0;
+        left: unset;
+        transform: none;
+      }
+    }
+    &.leften {
+      float: left;
+      .dropping-menu {
+        left: 0;
+        right: unset;
+        transform: none;
+      }
+    }
+  }
+  

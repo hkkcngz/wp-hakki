@@ -1,0 +1,226 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--second-font);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #3d4449;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+h1 {
+    font-size: 1.4em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.9em;
+}
+
+h6 {
+    font-size: 0.8em;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    position: relative;
+    background: #ffffff;
+    padding: 2em;
+    border-radius: 0.75rem;
+    line-height: 1.6;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    position: relative;
+    font-size: 0.875rem;
+    box-shadow: 0 10px 15px -3px rgba(var(--section, #000), 0.1),
+        0 4px 6px -2px rgba(var(--section, #000), 0.05);
+
+    @include mobile{
+        border-radius:0;
+        margin-bottom: 0;
+    }
+    &.np{
+        padding: 0;
+    }
+
+    .title {
+        font-weight: 500;
+        font-size: 1.25rem;
+        color: black;
+        margin-bottom: 0.75rem;
+
+        svg {
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            vertical-align: -10%;
+            margin-right: 0.25em;
+        }
+
+        &.package-name {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+            margin-top: -0.5rem;
+        }
+    }
+
+    strong {
+        font-weight: 500;
+        color: black;
+    }
+
+    p {
+        margin: 0.5rem 0 1.5rem;
+
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #3b4ce2;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    code {
+        font-weight: 500;
+        font-family: Consolas, monaco, monospace;
+        position: relative;
+        z-index: 1;
+        margin: 0 2px;
+        background: #f3f4f4;
+        content: "";
+        border-radius: 3px;
+        padding: 2px 5px;
+        white-space: nowrap;
+    }
+
+    ul {
+        margin-top: 0.5em;
+        padding-left: 1em;
+        list-style-type: disc;
+        column-width: 11.5em;
+    }
+}
+
+details {
+    margin-top: 1.5em;
+    background: #f1f1f1;
+    margin: -2em;
+    margin-top: 2em;
+    padding: 1.5em 2em;
+
+    .gist {
+        margin-top: 1.5em;
+    }
+
+    summary {
+        outline: none;
+        list-style-type: none;
+
+        &::marker {
+            display: none;
+        }
+    }
+}
+
+.toggle-code, .btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    background: #10b981;
+    border: none;
+    outline: none;
+    top: 1em;
+    right: 1em;
+    color: white;
+    font-weight: 500;
+    user-select: none;
+    cursor: pointer;
+
+    &:hover {
+        background: darken(#10b981, 5%);
+    }
+
+    svg {
+        display: inline-block;
+        vertical-align: -15%;
+        margin-right: 0.25em;
+    }
+}
+.btn.btn-secondary{
+    background-color: #ddd;
+    color: #666;
+    &:hover {
+        background: darken(#ddd, 5%);
+    }
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+
+
+del {
+    --del-color: #ff92bf; 
+
+    --color: var(--del-color, red);
+    text-decoration: none;
+    padding: 0 .5em;
+    background-repeat: no-repeat;
+    background-image: 
+      linear-gradient(to left, rgba(255, 255, 255, .5), transparent),
+      linear-gradient(2deg, var(--color) 50%, transparent 50%),
+      linear-gradient(-.9deg, var(--color) 50%, transparent 50%),
+      linear-gradient(-60deg, var(--color) 50%, transparent 50%),
+      linear-gradient(120deg, var(--color) 50%, transparent 50%);
+    
+    background-size: 
+      30% 1.5px,
+      calc(100% - 20px) 10px, 
+      calc(100% - 20px) 10px,
+      10px 10px,
+      8px 8px; 
+    
+    background-position: 
+      100% calc(50% + 2px),
+      center center, 
+      center center, 
+      2px 50%, 
+      calc(100% - 3px) calc(50% + 1px);
+  }
+  
+  /* don't have much ideas for <ins> */
+  ins {
+      
+    --ins-color: #ddff92;
+    background: var(--ins-color, green);
+    text-decoration: none;
+  }

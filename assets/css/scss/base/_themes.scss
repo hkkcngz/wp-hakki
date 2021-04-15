@@ -1,0 +1,35 @@
+// Dark Mode
+html.dark-mode,
+html[theme='dark-mode'] {
+    filter: invert(1) hue-rotate(180deg);
+    --navcolor: #e0e0e0;
+    --bgcolor: #e2e2e2;
+    --section: #eee;
+    
+    --overlay: #fff;
+    --lamblights: #584308;
+    --tablecolor: #eee;
+    --sidegradient01: #e0e0e0;;
+    --sidegradient02: #e2e2e2;
+    img{
+        filter: invert(1) hue-rotate(180deg);
+    }
+}
+
+// Default Mode
+html.dark-mode,
+html[theme='light-mode'] {
+    filter: invert(1) hue-rotate(180deg);
+    --navcolor: #e0e0e0;
+    --bgcolor: #e2e2e2;
+    --section: #eee;
+    
+    --overlay: #fff;
+    --lamblights: #584308;
+    --tablecolor: #eee;
+    --sidegradient01: #e0e0e0;;
+    --sidegradient02: #e2e2e2;
+    img{
+        filter: invert(1) hue-rotate(180deg);
+    }
+}
