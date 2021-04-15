@@ -381,7 +381,7 @@
   
         <div class="pageloader">
           <div class="loader-logo">
-            <img src="images/logo-mini.png" alt="SA">
+            <img src="<?=$theme?>/images/logo-mini.png" alt="SA">
           </div>
           <div class="hkkcngz">
             <span class="dot"></span>
@@ -460,7 +460,7 @@
                 </div>
   
                 <h3>Ayarlar</h3>
-                <img src="https://hakkicengiz.com/wp-content/themes/hkk-tema/assets/img/logo-mini.png" alt="Logo">
+                <img src="<?=$theme?>/images/logo-mini.png" alt="Logo">
                 <hr>
                 <h3>Hızlı Araçlar</h3>
                 <div class="tagcloud">

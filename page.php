@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php 
+  // variables
+  $theme = get_template_directory_uri();
+get_header(); ?>
 
 <section>
   <div class="tagcloud center">
@@ -29,7 +32,7 @@
         <div class="single-post-details">
 
 <div class="post-details-alt">
-  <img src="images/me.jpg" alt="Me">
+  <img src="<?=$theme?>/images/me.jpg" alt="Me">
   <div>
     <span class="author-name">Hakkı Cengiz</span>
     <span class="readtime">☙ 1 dk okuma süresi</span> <br>

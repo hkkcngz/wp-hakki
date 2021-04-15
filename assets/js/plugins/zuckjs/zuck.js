@@ -97,7 +97,7 @@ if (Stories) {
     stories: [
       Zuck.buildTimelineItem(
         "hakki",
-        "http://127.0.0.1:5501/images/me.jpg",
+        "https://kodmob.com/test/wp-content/themes/wp-hakki/images/me.jpg",
         "Hakkı",
         "https://hakki.app",
         timestamp(),
